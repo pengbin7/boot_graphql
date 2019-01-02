@@ -1,12 +1,14 @@
 package com.pb.boot.controller.one;
 
 import com.pb.boot.service.one.DataService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DataTransFormController {
 
+    @Autowired
     DataService dataService;
 
     @GetMapping(value = "hello")
