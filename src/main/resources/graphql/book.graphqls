@@ -7,11 +7,14 @@ type Book {
     isbn: String!
     pageCount: Int
     author: Author
+    a:String
+    b:String
 }
 
 extend type Query {
     findAllBooks: [Book]!
     countBooks: Long!
+    getOneBook:Book
 }
 
 extend type Mutation {

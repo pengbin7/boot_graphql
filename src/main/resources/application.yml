@@ -6,10 +6,6 @@ spring:
     username: root
     password: root
     driverClassName: com.mysql.jdbc.Driver
-  mvc:
-    view:
-      prefix: classpath:/static
-      suffix: .html
   thymeleaf:
     cache: false
 
@@ -20,7 +16,8 @@ graphql:
     enabled: true
     corsEnabled: true
 
-graphiql:
-  mapping: /graphql
-  endpoint: /graphql
-  enabled: true
+#图形化界面
+#graphiql:
+#  mapping: /graphql
+#  endpoint: /graphql
+#  enabled: true

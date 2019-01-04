@@ -44,19 +44,19 @@ public class GraphqlConfiguration {
         };
     }
 
-    @Bean
+    /*@Bean
     public BookResolver bookResolver(AuthorRepository authorRepository) {
         return new BookResolver(authorRepository);
-    }
+    }*/
 
     /*@Bean
     public Query query(AuthorRepository authorRepository, BookRepository bookRepository) {
         return new Query(authorRepository, bookRepository);
     }*/
 
-    @Bean
+    /*@Bean
     public Mutation mutation(AuthorRepository authorRepository, BookRepository bookRepository) {
         return new Mutation(authorRepository, bookRepository);
-    }
+    }*/
 
 }

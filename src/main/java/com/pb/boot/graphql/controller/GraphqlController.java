@@ -11,4 +11,9 @@ public class GraphqlController {
         return "graphiql";
     }
 
+    @RequestMapping(value = "index")
+    public String a(){
+        return "index";
+    }
+
 }

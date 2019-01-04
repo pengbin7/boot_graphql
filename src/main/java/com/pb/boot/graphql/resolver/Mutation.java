@@ -6,8 +6,9 @@ import com.pb.boot.graphql.model.Author;
 import com.pb.boot.graphql.model.Book;
 import com.pb.boot.graphql.repository.AuthorRepository;
 import com.pb.boot.graphql.repository.BookRepository;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class Mutation implements GraphQLMutationResolver {
 
     private BookRepository bookRepository;

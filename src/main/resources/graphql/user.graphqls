@@ -1,0 +1,17 @@
+input UserQuery {
+    id:Long
+    name:String
+    password:String
+    phone:String
+}
+
+type UserVo {
+    id:Long
+    name:String
+    password:String
+    phone:String
+}
+
+extend type Query {
+    test(query:UserQuery):UserVo
+}
